@@ -1,19 +1,23 @@
-# Docker Images for [Flutter](https://flutter.dev/) 
+# Docker Images for [Flutter](https://flutter.dev/) based on Circle's android image
 
-[![Build Status](https://api.cirrus-ci.com/github/cirruslabs/docker-images-flutter.svg)](https://cirrus-ci.com/github/cirruslabs/docker-images-flutter)
+[![](https://images.microbadger.com/badges/image/artemkozaev/flutter:stable.svg)](https://microbadger.com/images/artemkozaev/flutter:stable "Get your own image badge on microbadger.com")
 
-You can either [use it in CI](https://cirrus-ci.org/examples/#flutter) or run locally via Docker:
+You can either use it in CI or run locally via Docker:
 
 ```bash
-docker run --rm -it -v ${PWD}:/build --workdir /build cirrusci/flutter:stable flutter test
+docker run --rm -it -v ${PWD}:/build --workdir /build artemkozaev/flutter:stable flutter test
 ```
 
 The example above simply mount current working directory and runs `flutter test`
 
-## Available Docker Tags
+CircleCi has most of the layers pre-cached on most of the machines
 
-[![](https://images.microbadger.com/badges/version/cirrusci/flutter:stable.svg)](https://microbadger.com/images/cirrusci/flutter:stable) [![](https://images.microbadger.com/badges/image/cirrusci/flutter:stable.svg)](https://microbadger.com/images/cirrusci/flutter:stable)
+```bash
+stable: Pulling from artemkozaev/flutter
+8d691f585fa8: Already exists
+3da6fe7ff2ef: Already exists
+....
+090be27cee1c: Pulling fs layer
+```
 
-[![](https://images.microbadger.com/badges/version/cirrusci/flutter:beta.svg)](https://microbadger.com/images/cirrusci/flutter:beta) [![](https://images.microbadger.com/badges/image/cirrusci/flutter:beta.svg)](https://microbadger.com/images/cirrusci/flutter:beta)
-
-[![](https://images.microbadger.com/badges/version/cirrusci/flutter:dev.svg)](https://microbadger.com/images/cirrusci/flutter:dev) [![](https://images.microbadger.com/badges/image/cirrusci/flutter:dev.svg)](https://microbadger.com/images/cirrusci/flutter:dev)
+Average Spin up Environment time is **20s** if image is not found on the machine, **5s** if image is found on machine
