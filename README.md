@@ -5,7 +5,7 @@
 You can either use it in CI or run locally via Docker:
 
 ```bash
-docker run --rm -it -v ${PWD}:/build --workdir /build artemkozaev/flutter:stable flutter test
+docker run --rm -it -v ${PWD}:/build --workdir /build artemkozaev/flutter:<VERSION> flutter test
 ```
 
 The example above simply mount current working directory and runs `flutter test`
@@ -21,3 +21,17 @@ stable: Pulling from artemkozaev/flutter
 ```
 
 Average Spin up Environment time is **20s** if image is not found on the machine, **5s** if image is found on machine
+
+## Versions
+
+### 1.9.1
+
+Docker tag: 1.9.1-6
+
+Flutter version: v1.9.1+hotfix.6
+
+## Manual build
+
+```bash
+FLUTTER_VERSION=v1.9.1+hotfix.6 DOCKER_TAG=1.9.1-6 ./build_docker.sh
+```
