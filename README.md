@@ -30,6 +30,10 @@ Docker tag: 1.12.13-5
 
 Flutter version: v1.12.13+hotfix.5
 
+Docker tag: 1.12.13-8
+
+Flutter version: v1.12.13+hotfix.8
+
 ### 1.9.1
 
 Docker tag: 1.9.1-6
