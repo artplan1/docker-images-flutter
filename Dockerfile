@@ -1,4 +1,4 @@
-FROM circleci/android:api-29
+FROM circleci/android@sha256:061e2535826cc3fe4c4a440e716bf06c36c80401ee635c339c6803b3e427ebb3
 
 ARG flutter_version
 

@@ -24,6 +24,12 @@ Average Spin up Environment time is **20s** if image is not found on the machine
 
 ## Versions
 
+### 1.20.2
+
+Docker tag: 1.20.2
+
+Flutter version: v1.20.2
+
 ### 1.12.13
 
 Docker tag: 1.12.13-5
