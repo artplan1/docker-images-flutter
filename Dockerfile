@@ -1,4 +1,5 @@
-FROM circleci/android@sha256:061e2535826cc3fe4c4a440e716bf06c36c80401ee635c339c6803b3e427ebb3
+# Android API 29 with Java 8
+FROM circleci/android@sha256:b6646fdf7457f61825526e7bfce364d8e533da6ceb1cdb98e371e94348ecc834
 
 ARG flutter_version
 

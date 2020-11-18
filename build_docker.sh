@@ -2,7 +2,7 @@
 
 set -e
 
-docker build --cache-from "artemkozaev/flutter:${FLUTTER_VERSION/+/-}" \
+docker build --no-cache \
              --tag "artemkozaev/flutter:${FLUTTER_VERSION/+/-}" \
              --tag "artemkozaev/flutter:${DOCKER_TAG}" \
              --build-arg "flutter_version=$FLUTTER_VERSION" \
